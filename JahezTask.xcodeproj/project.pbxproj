@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5305120F2B40331400142107 /* JahezTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305120E2B40331400142107 /* JahezTaskApp.swift */; };
+		530512112B40331400142107 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512102B40331400142107 /* ContentView.swift */; };
+		530512132B40331500142107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530512122B40331500142107 /* Assets.xcassets */; };
+		530512162B40331500142107 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530512152B40331500142107 /* Preview Assets.xcassets */; };
+		5305122A2B40331500142107 /* JahezTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512292B40331500142107 /* JahezTaskUITests.swift */; };
+		5305122C2B40331500142107 /* JahezTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305122B2B40331500142107 /* JahezTaskUITestsLaunchTests.swift */; };
+		530512412B4037DA00142107 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512402B4037DA00142107 /* NetworkManager.swift */; };
+		530512432B4037EA00142107 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512422B4037EA00142107 /* MockNetworkManager.swift */; };
+		530512472B403CEA00142107 /* GenreResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512462B403CEA00142107 /* GenreResponseModel.swift */; };
+		5305124D2B403E7B00142107 /* JahezTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305124C2B403E7B00142107 /* JahezTaskTests.swift */; };
+		530512502B40417A00142107 /* MovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305124F2B40417A00142107 /* MovieListTests.swift */; };
+		530512522B40424400142107 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512512B40424400142107 /* Constants.swift */; };
+		530512552B408E8A00142107 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512542B408E8A00142107 /* MovieRepository.swift */; };
+		530512572B408ED900142107 /* MovieDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512562B408ED900142107 /* MovieDataRepository.swift */; };
+		530512592B40901800142107 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512582B40901800142107 /* MovieInteractor.swift */; };
+		5305125B2B40917B00142107 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305125A2B40917B00142107 /* MovieListViewModel.swift */; };
+		5305125D2B40920A00142107 /* MoviesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305125C2B40920A00142107 /* MoviesResponseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5305121C2B40331500142107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 530512032B40331400142107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5305120A2B40331400142107;
+			remoteInfo = JahezTask;
+		};
+		530512262B40331500142107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 530512032B40331400142107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5305120A2B40331400142107;
+			remoteInfo = JahezTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5305120B2B40331400142107 /* JahezTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JahezTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5305120E2B40331400142107 /* JahezTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezTaskApp.swift; sourceTree = "<group>"; };
+		530512102B40331400142107 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		530512122B40331500142107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		530512152B40331500142107 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5305121B2B40331500142107 /* JahezTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JahezTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		530512252B40331500142107 /* JahezTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JahezTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		530512292B40331500142107 /* JahezTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezTaskUITests.swift; sourceTree = "<group>"; };
+		5305122B2B40331500142107 /* JahezTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		530512402B4037DA00142107 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		530512422B4037EA00142107 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		530512462B403CEA00142107 /* GenreResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreResponseModel.swift; sourceTree = "<group>"; };
+		5305124C2B403E7B00142107 /* JahezTaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JahezTaskTests.swift; sourceTree = "<group>"; };
+		5305124F2B40417A00142107 /* MovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTests.swift; sourceTree = "<group>"; };
+		530512512B40424400142107 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		530512542B408E8A00142107 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		530512562B408ED900142107 /* MovieDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataRepository.swift; sourceTree = "<group>"; };
+		530512582B40901800142107 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		5305125A2B40917B00142107 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		5305125C2B40920A00142107 /* MoviesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponseModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		530512082B40331400142107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530512182B40331500142107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530512222B40331500142107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		530512022B40331400142107 = {
+			isa = PBXGroup;
+			children = (
+				5305120D2B40331400142107 /* JahezTask */,
+				5305121E2B40331500142107 /* JahezTaskTests */,
+				530512282B40331500142107 /* JahezTaskUITests */,
+				5305120C2B40331400142107 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5305120C2B40331400142107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5305120B2B40331400142107 /* JahezTask.app */,
+				5305121B2B40331500142107 /* JahezTaskTests.xctest */,
+				530512252B40331500142107 /* JahezTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5305120D2B40331400142107 /* JahezTask */ = {
+			isa = PBXGroup;
+			children = (
+				530512512B40424400142107 /* Constants.swift */,
+				5305123F2B4037C700142107 /* Network */,
+				530512122B40331500142107 /* Assets.xcassets */,
+				530512102B40331400142107 /* ContentView.swift */,
+				5305120E2B40331400142107 /* JahezTaskApp.swift */,
+				5305123A2B4033BD00142107 /* Scenes */,
+				530512142B40331500142107 /* Preview Content */,
+			);
+			path = JahezTask;
+			sourceTree = "<group>";
+		};
+		530512142B40331500142107 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				530512152B40331500142107 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5305121E2B40331500142107 /* JahezTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				5305124C2B403E7B00142107 /* JahezTaskTests.swift */,
+				5305124F2B40417A00142107 /* MovieListTests.swift */,
+			);
+			path = JahezTaskTests;
+			sourceTree = "<group>";
+		};
+		530512282B40331500142107 /* JahezTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				530512292B40331500142107 /* JahezTaskUITests.swift */,
+				5305122B2B40331500142107 /* JahezTaskUITestsLaunchTests.swift */,
+			);
+			path = JahezTaskUITests;
+			sourceTree = "<group>";
+		};
+		530512382B4033A900142107 /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				5305123D2B4033F200142107 /* Presentation */,
+				5305123C2B4033EB00142107 /* Domain */,
+				530512532B408E4D00142107 /* Model */,
+				5305123B2B4033E600142107 /* Data */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		530512392B4033B500142107 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		5305123A2B4033BD00142107 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				530512392B4033B500142107 /* MovieDetails */,
+				530512382B4033A900142107 /* MoviesList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5305123B2B4033E600142107 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				530512562B408ED900142107 /* MovieDataRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5305123C2B4033EB00142107 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				530512542B408E8A00142107 /* MovieRepository.swift */,
+				530512582B40901800142107 /* MovieInteractor.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5305123D2B4033F200142107 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5305125A2B40917B00142107 /* MovieListViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5305123F2B4037C700142107 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				530512402B4037DA00142107 /* NetworkManager.swift */,
+				530512422B4037EA00142107 /* MockNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		530512532B408E4D00142107 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				530512462B403CEA00142107 /* GenreResponseModel.swift */,
+				5305125C2B40920A00142107 /* MoviesResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5305120A2B40331400142107 /* JahezTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5305122F2B40331500142107 /* Build configuration list for PBXNativeTarget "JahezTask" */;
+			buildPhases = (
+				530512072B40331400142107 /* Sources */,
+				530512082B40331400142107 /* Frameworks */,
+				530512092B40331400142107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JahezTask;
+			productName = JahezTask;
+			productReference = 5305120B2B40331400142107 /* JahezTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5305121A2B40331500142107 /* JahezTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530512322B40331500142107 /* Build configuration list for PBXNativeTarget "JahezTaskTests" */;
+			buildPhases = (
+				530512172B40331500142107 /* Sources */,
+				530512182B40331500142107 /* Frameworks */,
+				530512192B40331500142107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5305121D2B40331500142107 /* PBXTargetDependency */,
+			);
+			name = JahezTaskTests;
+			productName = JahezTaskTests;
+			productReference = 5305121B2B40331500142107 /* JahezTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		530512242B40331500142107 /* JahezTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 530512352B40331500142107 /* Build configuration list for PBXNativeTarget "JahezTaskUITests" */;
+			buildPhases = (
+				530512212B40331500142107 /* Sources */,
+				530512222B40331500142107 /* Frameworks */,
+				530512232B40331500142107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				530512272B40331500142107 /* PBXTargetDependency */,
+			);
+			name = JahezTaskUITests;
+			productName = JahezTaskUITests;
+			productReference = 530512252B40331500142107 /* JahezTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		530512032B40331400142107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5305120A2B40331400142107 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5305121A2B40331500142107 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+						TestTargetID = 5305120A2B40331400142107;
+					};
+					530512242B40331500142107 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 5305120A2B40331400142107;
+					};
+				};
+			};
+			buildConfigurationList = 530512062B40331400142107 /* Build configuration list for PBXProject "JahezTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 530512022B40331400142107;
+			productRefGroup = 5305120C2B40331400142107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5305120A2B40331400142107 /* JahezTask */,
+				5305121A2B40331500142107 /* JahezTaskTests */,
+				530512242B40331500142107 /* JahezTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		530512092B40331400142107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530512162B40331500142107 /* Preview Assets.xcassets in Resources */,
+				530512132B40331500142107 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530512192B40331500142107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530512232B40331500142107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		530512072B40331400142107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530512552B408E8A00142107 /* MovieRepository.swift in Sources */,
+				530512472B403CEA00142107 /* GenreResponseModel.swift in Sources */,
+				530512112B40331400142107 /* ContentView.swift in Sources */,
+				530512572B408ED900142107 /* MovieDataRepository.swift in Sources */,
+				530512592B40901800142107 /* MovieInteractor.swift in Sources */,
+				5305125B2B40917B00142107 /* MovieListViewModel.swift in Sources */,
+				530512412B4037DA00142107 /* NetworkManager.swift in Sources */,
+				5305125D2B40920A00142107 /* MoviesResponseModel.swift in Sources */,
+				530512522B40424400142107 /* Constants.swift in Sources */,
+				530512432B4037EA00142107 /* MockNetworkManager.swift in Sources */,
+				5305120F2B40331400142107 /* JahezTaskApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530512172B40331500142107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530512502B40417A00142107 /* MovieListTests.swift in Sources */,
+				5305124D2B403E7B00142107 /* JahezTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		530512212B40331500142107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5305122C2B40331500142107 /* JahezTaskUITestsLaunchTests.swift in Sources */,
+				5305122A2B40331500142107 /* JahezTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5305121D2B40331500142107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5305120A2B40331400142107 /* JahezTask */;
+			targetProxy = 5305121C2B40331500142107 /* PBXContainerItemProxy */;
+		};
+		530512272B40331500142107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5305120A2B40331400142107 /* JahezTask */;
+			targetProxy = 530512262B40331500142107 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5305122D2B40331500142107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5305122E2B40331500142107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		530512302B40331500142107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JahezTask/Preview Content\"";
+				DEVELOPMENT_TEAM = 5H6V7K6T4N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = na.JahezTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		530512312B40331500142107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JahezTask/Preview Content\"";
+				DEVELOPMENT_TEAM = 5H6V7K6T4N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = na.JahezTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		530512332B40331500142107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6V7K6T4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = na.JahezTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JahezTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JahezTask";
+			};
+			name = Debug;
+		};
+		530512342B40331500142107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6V7K6T4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = na.JahezTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JahezTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JahezTask";
+			};
+			name = Release;
+		};
+		530512362B40331500142107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6V7K6T4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = na.JahezTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JahezTask;
+			};
+			name = Debug;
+		};
+		530512372B40331500142107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6V7K6T4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = na.JahezTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JahezTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		530512062B40331400142107 /* Build configuration list for PBXProject "JahezTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5305122D2B40331500142107 /* Debug */,
+				5305122E2B40331500142107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5305122F2B40331500142107 /* Build configuration list for PBXNativeTarget "JahezTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530512302B40331500142107 /* Debug */,
+				530512312B40331500142107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		530512322B40331500142107 /* Build configuration list for PBXNativeTarget "JahezTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530512332B40331500142107 /* Debug */,
+				530512342B40331500142107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		530512352B40331500142107 /* Build configuration list for PBXNativeTarget "JahezTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530512362B40331500142107 /* Debug */,
+				530512372B40331500142107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 530512032B40331400142107 /* Project object */;
+}
