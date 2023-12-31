@@ -18,4 +18,12 @@ class MovieDataRepository: MovieRepository {
         let endpoint = Endpoint(path: "genre/movie/list", method: .get)
         return networkManager.request(endpoint)
     }
+    
+    func getPopularMovies(page: Int) -> AnyPublisher<MoviesResponseModel, NetworkError> {
+        let endpoint = Endpoint(
+            path: "discover/movie?include_adult=false&sort_by=popularity.desc&page=\(page)",
+            method: .get
+        )
+        return networkManager.request(endpoint)
+     }
 }
