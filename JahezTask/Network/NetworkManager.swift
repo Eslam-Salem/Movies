@@ -24,6 +24,11 @@ enum HTTPMethod: String {
     // Add more methods as needed
 }
 
+enum RequestContext {
+    case initalCall
+    case pagination
+}
+
 protocol NetworkManager {
     func request<T: Decodable>(_ endpoint: Endpoint) -> AnyPublisher<T, NetworkError>
 }

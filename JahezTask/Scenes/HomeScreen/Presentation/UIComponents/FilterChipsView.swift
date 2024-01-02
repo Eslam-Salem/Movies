@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FilterChipsView: View {
-    @State var selectedGenres: Set<Int> = []
+    @Binding var selectedGenres: Set<Int>
     
     let allGenres: [MovieGenre]
     
@@ -22,7 +22,7 @@ struct FilterChipsView: View {
                         Text(genre.name)
                             .padding(.horizontal, 12)
                             .padding(.vertical, 4)
-                            .foregroundColor(.white)
+                            .foregroundColor(selectedGenres.contains(genre.id) ? .black : .white)
                             .background(
                                 RoundedRectangle(cornerRadius: 16)
                                     .stroke(Color.appYellow)
@@ -47,6 +47,7 @@ struct FilterChipsView: View {
 
 #Preview {
     FilterChipsView(
+        selectedGenres: .constant([1]),
         allGenres:
             [
                 MovieGenre(id: 1, name: "Action"),

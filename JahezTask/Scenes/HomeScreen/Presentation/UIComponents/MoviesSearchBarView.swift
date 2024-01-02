@@ -1,5 +1,5 @@
 //
-//  MoviewSearchBarView.swift
+//  MoviesSearchBarView.swift
 //  JahezTask
 //
 //  Created by Eslam Salem on 30/12/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MoviewSearchBarView: View {
+struct MoviesSearchBarView: View {
     @Binding var text: String
 
     var body: some View {
@@ -15,6 +15,7 @@ struct MoviewSearchBarView: View {
             TextField("Search", text: $text)
                 .padding(8)
                 .background(Color.appDarkGray)
+                .foregroundColor(.white)
                 .cornerRadius(8)
                 .disableAutocorrection(true)
 
@@ -31,5 +32,5 @@ struct MoviewSearchBarView: View {
 }
 
 #Preview {
-    MoviewSearchBarView(text: .constant(""))
+    MoviesSearchBarView(text: .constant(""))
 }

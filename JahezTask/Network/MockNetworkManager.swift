@@ -21,11 +21,11 @@ class MockNetworkManager: NetworkManager {
         }
 
         guard let responseData = responseData else {
-            fatalError("Response data is nil.")
+            fatalError("Response data is nil. Make sure to set responseData before making the network request.")
         }
 
         return Just(responseData)
-            .decode(type: T.self, decoder: JSONDecoder())
+            .decode(type: T.self, decoder: JSONDecoder.defaultDecoder)
             .mapError { _ in NetworkError.invalidResponse }
             .eraseToAnyPublisher()
     }
