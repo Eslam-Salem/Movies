@@ -9,5 +9,5 @@ import Combine
 
 protocol MovieRepository {
     func getMovieGenres() -> AnyPublisher<GenreResponse, NetworkError>
-    func getPopularMovies(page: Int) -> AnyPublisher<MoviesResponseModel, NetworkError>
+    func getPopularMovies(page: Int, requestContext: RequestContext) -> AnyPublisher<MoviesResponseModel, NetworkError>
 }

@@ -6,20 +6,14 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct MovieItemView: View {
     let movie: Movie
 
     var body: some View {
         VStack(alignment: .center) {
-            KFImage.url(URL(string: "\(Constants.imageBaseURL)\(movie.posterPath ?? "")"))
-                .resizable()
-                .scaledToFit()
-                .onAppear {
-                    ImageLoaderConfigurator.shared.configureDownloader()
-                }
-                .clipped()
+            
+            ServerImageView(imagePath: movie.posterPath ?? "")
                 
             Text(movie.title ?? "")
                 .font(.headline)

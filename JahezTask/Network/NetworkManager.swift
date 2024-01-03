@@ -12,6 +12,7 @@ enum NetworkError: Error {
     case requestFailed(Error)
     case invalidResponse
     case decodingError(Error)
+    case noInternetConnection
 }
 
 struct Endpoint: Equatable {

@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct JahezTaskApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoordinatorView()
         }
     }
 }

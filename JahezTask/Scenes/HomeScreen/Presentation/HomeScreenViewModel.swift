@@ -13,11 +13,11 @@ class HomeScreenViewModel: ObservableObject {
     @Published var isFetchingMovies = false
     @Published var isFetchingNextPage = false
     var allMovies: [Movie] = []
-
-    private var cancellables: Set<AnyCancellable> = []
-    private let movieInteractor: MovieInteractor
     var currentPage = 1
     var totalNumberOfPages = 1
+    
+    private var cancellables: Set<AnyCancellable> = []
+    private let movieInteractor: MovieInteractor
     
     init(movieInteractor: MovieInteractor = MovieInteractor(movieRepository: MovieDataRepository(networkManager: ServerNetworkManager()))) {
         self.movieInteractor = movieInteractor
@@ -51,7 +51,7 @@ class HomeScreenViewModel: ObservableObject {
     
     func fetchMovies() {
         isFetchingMovies = true
-        requestMoviesList()
+        requestMoviesList(requestContext: .initalCall)
     }
     
     func loadMoreMoviesIfNeeded(movie: Movie) {
@@ -60,11 +60,11 @@ class HomeScreenViewModel: ObservableObject {
         guard isLastMovieInTheList, currentPage < totalNumberOfPages else { return }
         currentPage += 1
         isFetchingNextPage = true
-        requestMoviesList()
+        requestMoviesList(requestContext: .pagination)
     }
     
-    private func requestMoviesList() {
-        movieInteractor.getPopularMovies(page: currentPage)
+    private func requestMoviesList(requestContext: RequestContext) {
+        movieInteractor.getPopularMovies(page: currentPage, requestContext: requestContext)
             .sink(receiveCompletion: { _ in },
                   receiveValue: { [weak self] moviesResponseModel in
                 self?.allMovies.append(contentsOf: moviesResponseModel.results ?? [])

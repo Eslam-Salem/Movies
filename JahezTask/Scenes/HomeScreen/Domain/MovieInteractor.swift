@@ -18,7 +18,7 @@ class MovieInteractor {
         return movieRepository.getMovieGenres()
     }
     
-    func getPopularMovies(page: Int) -> AnyPublisher<MoviesResponseModel, NetworkError> {
-        return movieRepository.getPopularMovies(page: page)
+    func getPopularMovies(page: Int, requestContext: RequestContext) -> AnyPublisher<MoviesResponseModel, NetworkError> {
+        return movieRepository.getPopularMovies(page: page, requestContext: requestContext)
     }
 }

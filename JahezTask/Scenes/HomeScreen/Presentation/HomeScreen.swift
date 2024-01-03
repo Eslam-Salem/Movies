@@ -10,8 +10,11 @@ import SwiftUI
 struct HomeScreen: View {
     @State private var searchText: String = ""
     @State private var selectedGenres: Set<Int> = []
+    @State var isMovieDetailsPresented = false
 
     @StateObject private var viewModel = HomeScreenViewModel()
+    
+    @EnvironmentObject private var coordinator: Coordinator
 
     var body: some View {
         VStack {
@@ -35,12 +38,10 @@ struct HomeScreen: View {
                 .onChange(of: selectedGenres) {
                     viewModel.filterMovies(selectedGenres: selectedGenres, searchText: searchText)
                 }
+
             // Movies List
             if viewModel.isFetchingMovies {
-              ProgressView("Fetching Movies...")
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .foregroundColor(Color.appYellow)
-                    .tint(Color.appYellow)
+                LoadingView(text: "Fetching Movies...", maxHeight: .infinity)
             } else {
                 ScrollView(.vertical, showsIndicators: true) {
                     LazyVGrid(
@@ -49,6 +50,9 @@ struct HomeScreen: View {
                     ) {
                         ForEach(viewModel.filterdMovies) { movie in
                             MovieItemView(movie: movie)
+                                .onTapGesture {
+                                    coordinator.push(.movieDetails(movieID: movie.id))
+                                }
                                 .onAppear {
                                     viewModel.loadMoreMoviesIfNeeded(movie: movie)
                                 }
@@ -60,13 +64,11 @@ struct HomeScreen: View {
             
             // Pagination progress view
             if viewModel.isFetchingNextPage {
-              ProgressView("Loading more ..")
-                .frame(maxWidth: .infinity)
-                .background(Color.appYellow)
+                LoadingView(text: "Loading more ..", maxHeight: 50)
             }
             
         }
-        .onAppear {
+        .onFirstAppearOnly {
             viewModel.fetchGenres()
             viewModel.fetchMovies()
         }

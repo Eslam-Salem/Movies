@@ -6,6 +6,8 @@
 //
 
 import Combine
+import Reachability
+import Foundation
 
 class MovieDataRepository: MovieRepository {
     private let networkManager: NetworkManager
@@ -16,14 +18,23 @@ class MovieDataRepository: MovieRepository {
 
     func getMovieGenres() -> AnyPublisher<GenreResponse, NetworkError> {
         let endpoint = Endpoint(path: "genre/movie/list", method: .get)
-        return networkManager.request(endpoint)
+        if let reachability = try? Reachability(), reachability.connection == .unavailable {
+            return JsonFilesLoader.loadOfflineData(fileName: "MockedMovieGeners")
+        } else {
+            return networkManager.request(endpoint)
+        }
     }
     
-    func getPopularMovies(page: Int) -> AnyPublisher<MoviesResponseModel, NetworkError> {
+    func getPopularMovies(page: Int, requestContext: RequestContext) -> AnyPublisher<MoviesResponseModel, NetworkError> {
         let endpoint = Endpoint(
             path: "discover/movie?include_adult=false&sort_by=popularity.desc&page=\(page)",
             method: .get
         )
-        return networkManager.request(endpoint)
-     }
+        if let reachability = try? Reachability(), reachability.connection == .unavailable, requestContext == .initalCall {
+            return JsonFilesLoader.loadOfflineData(fileName: "MockedMoviesList")
+        } else {
+            return networkManager.request(endpoint)
+        }
+    }
 }
+

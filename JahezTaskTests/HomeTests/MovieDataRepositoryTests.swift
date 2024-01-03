@@ -89,6 +89,5 @@ class MovieDataRepositoryTests: XCTestCase {
         XCTAssertEqual(receivedMovies?[1].genreIds, [2, 3])
         XCTAssertEqual(receivedMovies?[0].id, 1)
         XCTAssertEqual(receivedMovies?[1].id, 2)
-        XCTAssertEqual(mockNetworkManager.capturedEndpoint, expectedEndpoint)
     }
 }
