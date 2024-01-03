@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct HomeScreen: View {
     @State private var searchText: String = ""
@@ -13,7 +14,7 @@ struct HomeScreen: View {
     @State var isMovieDetailsPresented = false
 
     @StateObject private var viewModel = HomeScreenViewModel()
-    
+
     @EnvironmentObject private var coordinator: Coordinator
 
     var body: some View {
@@ -21,10 +22,10 @@ struct HomeScreen: View {
             // Search bar
             MoviesSearchBarView(text: $searchText)
                 .padding(.vertical, 8)
-                .onChange(of: searchText) {
-                    viewModel.filterMovies(selectedGenres: selectedGenres, searchText: searchText)
+                .onChange(of: searchText) { newValue in
+                    viewModel.filterMovies(selectedGenres: selectedGenres, searchText: newValue)
                 }
-            
+
             // Screen Title
             Text("Watch New Movies")
                 .font(.title)
@@ -32,11 +33,11 @@ struct HomeScreen: View {
                 .foregroundColor(Color.appYellow)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(8)
-            
+
             // Filter
             FilterChipsView(selectedGenres: $selectedGenres, allGenres: viewModel.genres)
-                .onChange(of: selectedGenres) {
-                    viewModel.filterMovies(selectedGenres: selectedGenres, searchText: searchText)
+                .onChange(of: selectedGenres) { newValue in
+                    viewModel.filterMovies(selectedGenres: newValue, searchText: searchText)
                 }
 
             // Movies List
@@ -45,7 +46,7 @@ struct HomeScreen: View {
             } else {
                 ScrollView(.vertical, showsIndicators: true) {
                     LazyVGrid(
-                        columns: [GridItem(.flexible()),GridItem(.flexible())],
+                        columns: [GridItem(.flexible()), GridItem(.flexible())],
                         spacing: 16
                     ) {
                         ForEach(viewModel.filterdMovies) { movie in
@@ -61,12 +62,11 @@ struct HomeScreen: View {
                 }
                 .scrollContentBackground(.hidden)
             }
-            
+
             // Pagination progress view
             if viewModel.isFetchingNextPage {
                 LoadingView(text: "Loading more ..", maxHeight: 50)
             }
-            
         }
         .onFirstAppearOnly {
             viewModel.fetchGenres()

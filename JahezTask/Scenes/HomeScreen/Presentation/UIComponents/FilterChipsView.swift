@@ -23,9 +23,12 @@ struct FilterChipsView: View {
                             .padding(.horizontal, 12)
                             .padding(.vertical, 4)
                             .foregroundColor(selectedGenres.contains(genre.id) ? .black : .white)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 16)
+                                    .stroke(Color.appYellow, lineWidth: 1)
+                            )
                             .background(
                                 RoundedRectangle(cornerRadius: 16)
-                                    .stroke(Color.appYellow)
                                     .fill(selectedGenres.contains(genre.id) ? Color.appYellow : Color.clear)
                             )
                     }
@@ -44,6 +47,7 @@ struct FilterChipsView: View {
         }
     }
 }
+
 
 #Preview {
     FilterChipsView(
