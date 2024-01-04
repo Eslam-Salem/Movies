@@ -1,5 +1,5 @@
 //
-//  MovieInteractor.swift
+//  HomeInteractor.swift
 //  JahezTask
 //
 //  Created by Eslam Salem on 30/12/2023.
@@ -7,7 +7,7 @@
 
 import Combine
 
-class MovieInteractor {
+class HomeInteractor {
     private let movieRepository: MovieRepository
     
     init(movieRepository: MovieRepository) {

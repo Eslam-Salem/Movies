@@ -3,409 +3,6 @@
     "results": [
         {
             "adult": false,
-            "backdrop_path": "/vruRG9oFSC2QI3F6vLAsj1ND14S.jpg",
-            "genre_ids": [
-                878,
-                28,
-                53,
-                27
-            ],
-            "id": 934194,
-            "original_language": "en",
-            "original_title": "Slash/Back",
-            "overview": "In a remote Arctic community, a group of Inuit girls fight off an alien invasion, all while trying to make it to the coolest party in town.",
-            "popularity": 368.883,
-            "poster_path": "/fmmRFQtsRrNOpmcfoxVIyE1LxxT.jpg",
-            "release_date": "2022-06-24",
-            "title": "Slash/Back",
-            "video": false,
-            "vote_average": 6.4,
-            "vote_count": 43
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/h56edmERPTkey89SqyKu4hINVNy.jpg",
-            "genre_ids": [
-                28,
-                53
-            ],
-            "id": 575264,
-            "original_language": "en",
-            "original_title": "Mission: Impossible - Dead Reckoning Part One",
-            "overview": "Ethan Hunt and his IMF team embark on their most dangerous mission yet: To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong hands. With control of the future and the world's fate at stake and dark forces from Ethan's past closing in, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan must consider that nothing can matter more than his mission—not even the lives of those he cares about most.",
-            "popularity": 363.386,
-            "poster_path": "/NNxYkU70HPurnNCSiCjYAmacwm.jpg",
-            "release_date": "2023-07-08",
-            "title": "Mission: Impossible - Dead Reckoning Part One",
-            "video": false,
-            "vote_average": 7.6,
-            "vote_count": 2803
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/xFYpUmB01nswPgbzi8EOCT1ZYFu.jpg",
-            "genre_ids": [
-                12,
-                28,
-                18
-            ],
-            "id": 980489,
-            "original_language": "en",
-            "original_title": "Gran Turismo",
-            "overview": "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
-            "popularity": 345.586,
-            "poster_path": "/51tqzRtKMMZEYUpSYkrUE7v9ehm.jpg",
-            "release_date": "2023-08-09",
-            "title": "Gran Turismo",
-            "video": false,
-            "vote_average": 8,
-            "vote_count": 1716
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/azD31DjpV3PJfjF3h72LVw2WCSD.jpg",
-            "genre_ids": [
-                27
-            ],
-            "id": 807172,
-            "original_language": "en",
-            "original_title": "The Exorcist: Believer",
-            "overview": "When two girls disappear into the woods and return three days later with no memory of what happened to them, the father of one girl seeks out Chris MacNeil, who's been forever altered by what happened to her daughter fifty years ago.",
-            "popularity": 344.499,
-            "poster_path": "/qVKirUdmoex8SdfUk8WDDWwrcCh.jpg",
-            "release_date": "2023-10-04",
-            "title": "The Exorcist: Believer",
-            "video": false,
-            "vote_average": 6.2,
-            "vote_count": 703
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/pLm9j7o5InoWaG2tlaQABYR2cAx.jpg",
-            "genre_ids": [
-                27,
-                9648,
-                53
-            ],
-            "id": 968051,
-            "original_language": "en",
-            "original_title": "The Nun II",
-            "overview": "In 1956 France, a priest is violently murdered, and Sister Irene begins to investigate. She once again comes face-to-face with a powerful evil.",
-            "popularity": 344.393,
-            "poster_path": "/5gzzkR7y3hnY8AD1wXjCnVlHba5.jpg",
-            "release_date": "2023-09-06",
-            "title": "The Nun II",
-            "video": false,
-            "vote_average": 6.9,
-            "vote_count": 1584
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/yF1eOkaYvwiORauRCPWznV9xVvi.jpg",
-            "genre_ids": [
-                28,
-                12,
-                878
-            ],
-            "id": 298618,
-            "original_language": "en",
-            "original_title": "The Flash",
-            "overview": "When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?",
-            "popularity": 342.641,
-            "poster_path": "/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
-            "release_date": "2023-06-13",
-            "title": "The Flash",
-            "video": false,
-            "vote_average": 6.8,
-            "vote_count": 3420
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg",
-            "genre_ids": [
-                878,
-                12,
-                28
-            ],
-            "id": 609681,
-            "original_language": "en",
-            "original_title": "The Marvels",
-            "overview": "Carol Danvers, aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken revenge on the Supreme Intelligence. But unintended consequences see Carol shouldering the burden of a destabilized universe. When her duties send her to an anomalous wormhole linked to a Kree revolutionary, her powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol’s estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
-            "popularity": 339.288,
-            "poster_path": "/Ag3D9qXjhJ2FUkrlJ0Cv1pgxqYQ.jpg",
-            "release_date": "2023-11-08",
-            "title": "The Marvels",
-            "video": false,
-            "vote_average": 6.4,
-            "vote_count": 767
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/pwvVS1AiRWLropqJ03i5ovynZhk.jpg",
-            "genre_ids": [
-                27,
-                53
-            ],
-            "id": 517929,
-            "original_language": "en",
-            "original_title": "Fog City",
-            "overview": "A group of friends seal themselves inside a secluded Cape Cod vacation home after a mysterious orange fog leaks from an old nearby factory. Once trapped, they quickly learn there is no escape.",
-            "popularity": 339.172,
-            "poster_path": "/isewxmxthIUrmPpGHQQlIuOid3s.jpg",
-            "release_date": "2023-10-20",
-            "title": "Fog City",
-            "video": false,
-            "vote_average": 5.3,
-            "vote_count": 3
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/4mmrgZW9bcgMRFdV1lCcXqCEXEr.jpg",
-            "genre_ids": [
-                28,
-                18,
-                12,
-                9648,
-                53
-            ],
-            "id": 755401,
-            "original_language": "en",
-            "original_title": "Skydog",
-            "overview": "After a high school senior working on his pilot’s license rescues a dog named Oreo, he finds out his mom is a CIA agent who’s been captured. He teams up with Oreo and a new friend to find his mother and uncover double agents inside the CIA.",
-            "popularity": 337.622,
-            "poster_path": "/5M3bY1rl9QIQSmrAGPEt9qutj64.jpg",
-            "release_date": "2020-10-20",
-            "title": "Skydog",
-            "video": false,
-            "vote_average": 6.7,
-            "vote_count": 10
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/AprNYUAS2AJ3xVgg7Wwt00GVvsM.jpg",
-            "genre_ids": [
-                16,
-                10751,
-                28,
-                878,
-                35,
-                18,
-                12
-            ],
-            "id": 893723,
-            "original_language": "en",
-            "original_title": "PAW Patrol: The Mighty Movie",
-            "overview": "A magical meteor crash lands in Adventure City and gives the PAW Patrol pups superpowers, transforming them into The Mighty Pups.",
-            "popularity": 336.43,
-            "poster_path": "/aTvePCU7exLepwg5hWySjwxojQK.jpg",
-            "release_date": "2023-09-21",
-            "title": "PAW Patrol: The Mighty Movie",
-            "video": false,
-            "vote_average": 6.9,
-            "vote_count": 194
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/8rpDcsfLJypbO6vREc0547VKqEv.jpg",
-            "genre_ids": [
-                878,
-                12,
-                28
-            ],
-            "id": 76600,
-            "original_language": "en",
-            "original_title": "Avatar: The Way of Water",
-            "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
-            "popularity": 334.967,
-            "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
-            "release_date": "2022-12-14",
-            "title": "Avatar: The Way of Water",
-            "video": false,
-            "vote_average": 7.6,
-            "vote_count": 10496
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/dZbLqRjjiiNCpTYzhzL2NMvz4J0.jpg",
-            "genre_ids": [
-                27,
-                53
-            ],
-            "id": 951491,
-            "original_language": "en",
-            "original_title": "Saw X",
-            "overview": "Between the events of 'Saw' and 'Saw II', a sick and desperate John Kramer travels to Mexico for a risky and experimental medical procedure in hopes of a miracle cure for his cancer, only to discover the entire operation is a scam to defraud the most vulnerable. Armed with a newfound purpose, the infamous serial killer returns to his work, turning the tables on the con artists in his signature visceral way through devious, deranged, and ingenious traps.",
-            "popularity": 333.337,
-            "poster_path": "/aQPeznSu7XDTrrdCtT5eLiu52Yu.jpg",
-            "release_date": "2023-09-26",
-            "title": "Saw X",
-            "video": false,
-            "vote_average": 7.4,
-            "vote_count": 1349
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/rb3QQ2TQfJoCpCZlfXBlBbzYy1D.jpg",
-            "genre_ids": [
-                53,
-                28
-            ],
-            "id": 844416,
-            "original_language": "en",
-            "original_title": "Rumble Through the Dark",
-            "overview": "Set in the dark landscape of the Mississippi Delta, where a former bare-knuckle fighter must win one last fight to pay off his debts to the local mob boss and save his childhood home—the stakes nothing less than life or death.",
-            "popularity": 330.529,
-            "poster_path": "/19UbYIT9WEQS5qSD3BREDxVXk8g.jpg",
-            "release_date": "2023-11-03",
-            "title": "Rumble Through the Dark",
-            "video": false,
-            "vote_average": 6.5,
-            "vote_count": 30
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/faXT8V80JRhnArTAeYXz0Eutpv9.jpg",
-            "genre_ids": [
-                12,
-                14,
-                16,
-                35,
-                10751,
-                28
-            ],
-            "id": 315162,
-            "original_language": "en",
-            "original_title": "Puss in Boots: The Last Wish",
-            "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
-            "popularity": 325.543,
-            "poster_path": "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
-            "release_date": "2022-12-07",
-            "title": "Puss in Boots: The Last Wish",
-            "video": false,
-            "vote_average": 8.3,
-            "vote_count": 6800
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/ixZzr4PyM2TPs5fka3IJj058WYo.jpg",
-            "genre_ids": [
-                28,
-                878,
-                12
-            ],
-            "id": 565770,
-            "original_language": "en",
-            "original_title": "Blue Beetle",
-            "overview": "Recent college grad Jaime Reyes returns home full of aspirations for his future, only to find that home is not quite as he left it. As he searches to find his purpose in the world, fate intervenes when Jaime unexpectedly finds himself in possession of an ancient relic of alien biotechnology: the Scarab.",
-            "popularity": 323.398,
-            "poster_path": "/mXLOHHc1Zeuwsl4xYKjKh2280oL.jpg",
-            "release_date": "2023-08-16",
-            "title": "Blue Beetle",
-            "video": false,
-            "vote_average": 6.9,
-            "vote_count": 1972
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
-            "genre_ids": [
-                28,
-                12,
-                878
-            ],
-            "id": 634649,
-            "original_language": "en",
-            "original_title": "Spider-Man: No Way Home",
-            "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-            "popularity": 316.701,
-            "poster_path": "/5weKu49pzJCt06OPpjvT80efnQj.jpg",
-            "release_date": "2021-12-15",
-            "title": "Spider-Man: No Way Home",
-            "video": false,
-            "vote_average": 8,
-            "vote_count": 18762
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/lntyt4OVDbcxA1l7LtwITbrD3FI.jpg",
-            "genre_ids": [
-                18,
-                10749
-            ],
-            "id": 1010581,
-            "original_language": "es",
-            "original_title": "Culpa mía",
-            "overview": "Noah must leave her city, boyfriend, and friends to move into William Leister's mansion, the flashy and wealthy husband of her mother Rafaela. As a proud and independent 17 year old, Noah resists living in a mansion surrounded by luxury. However, it is there where she meets Nick, her new stepbrother, and the clash of their strong personalities becomes evident from the very beginning.",
-            "popularity": 305.226,
-            "poster_path": "/w46Vw536HwNnEzOa7J24YH9DPRS.jpg",
-            "release_date": "2023-06-08",
-            "title": "My Fault",
-            "video": false,
-            "vote_average": 8.1,
-            "vote_count": 2072
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/5lWIYxYEqWi8j3ZloxXntw3ImBo.jpg",
-            "genre_ids": [
-                16,
-                10751,
-                35,
-                14
-            ],
-            "id": 360920,
-            "original_language": "en",
-            "original_title": "The Grinch",
-            "overview": "The Grinch hatches a scheme to ruin Christmas when the residents of Whoville plan their annual holiday celebration.",
-            "popularity": 293.384,
-            "poster_path": "/1Bc9VNd9CIHIyJtPKFqSQzrXWru.jpg",
-            "release_date": "2018-11-08",
-            "title": "The Grinch",
-            "video": false,
-            "vote_average": 6.9,
-            "vote_count": 3635
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
-            "genre_ids": [
-                878,
-                12,
-                28
-            ],
-            "id": 447365,
-            "original_language": "en",
-            "original_title": "Guardians of the Galaxy Vol. 3",
-            "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
-            "popularity": 289.639,
-            "poster_path": "/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
-            "release_date": "2023-05-03",
-            "title": "Guardians of the Galaxy Vol. 3",
-            "video": false,
-            "vote_average": 8,
-            "vote_count": 5606
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/pA3vdhadJPxF5GA1uo8OPTiNQDT.jpg",
-            "genre_ids": [
-                28,
-                18
-            ],
-            "id": 678512,
-            "original_language": "en",
-            "original_title": "Sound of Freedom",
-            "overview": "The story of Tim Ballard, a former US government agent, who quits his job in order to devote his life to rescuing children from global sex traffickers.",
-            "popularity": 287.317,
-            "poster_path": "/qA5kPYZA7FkVvqcEfJRoOy4kpHg.jpg",
-            "release_date": "2023-07-03",
-            "title": "Sound of Freedom",
-            "video": false,
-            "vote_average": 8.1,
-            "vote_count": 1699
-        },
-        {
-            "adult": false,
             "backdrop_path": "/sRLC052ieEzkQs9dEtPMfFxYkej.jpg",
             "genre_ids": [
                 878
@@ -414,13 +11,13 @@
             "original_language": "en",
             "original_title": "Rebel Moon - Part One: A Child of Fire",
             "overview": "When a peaceful colony on the edge of the galaxy finds itself threatened by the armies of the tyrannical Regent Balisarius, they dispatch Kora, a young woman with a mysterious past, to seek out warriors from neighboring planets to help them take a stand.",
-            "popularity": 2488.167,
+            "popularity": 2998.858,
             "poster_path": "/ui4DrH1cKk2vkHshcUcGt2lKxCm.jpg",
             "release_date": "2023-12-15",
             "title": "Rebel Moon - Part One: A Child of Fire",
             "video": false,
             "vote_average": 6.5,
-            "vote_count": 901
+            "vote_count": 949
         },
         {
             "adult": false,
@@ -434,13 +31,13 @@
             "original_language": "en",
             "original_title": "The Hunger Games: The Ballad of Songbirds & Snakes",
             "overview": "64 years before he becomes the tyrannical president of Panem, Coriolanus Snow sees a chance for a change in fortunes when he mentors Lucy Gray Baird, the female tribute from District 12.",
-            "popularity": 1964.304,
+            "popularity": 2750.026,
             "poster_path": "/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg",
             "release_date": "2023-11-15",
             "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
             "video": false,
             "vote_average": 7.2,
-            "vote_count": 1261
+            "vote_count": 1289
         },
         {
             "adult": false,
@@ -454,13 +51,13 @@
             "original_language": "en",
             "original_title": "Aquaman and the Lost Kingdom",
             "overview": "Black Manta, still driven by the need to avenge his father's death and wielding the power of the mythic Black Trident, will stop at nothing to take Aquaman down once and for all. To defeat him, Aquaman must turn to his imprisoned brother Orm, the former King of Atlantis, to forge an unlikely alliance in order to save the world from irreversible destruction.",
-            "popularity": 1722.55,
+            "popularity": 1542.493,
             "poster_path": "/8xV47NDrjdZDpkVcCFqkdHa3T0C.jpg",
             "release_date": "2023-12-20",
             "title": "Aquaman and the Lost Kingdom",
             "video": false,
             "vote_average": 6.5,
-            "vote_count": 348
+            "vote_count": 357
         },
         {
             "adult": false,
@@ -473,13 +70,13 @@
             "original_language": "en",
             "original_title": "The Family Plan",
             "overview": "Dan Morgan is many things: a devoted husband, a loving father, a celebrated car salesman. He's also a former assassin. And when his past catches up to his present, he's forced to take his unsuspecting family on a road trip unlike any other.",
-            "popularity": 1478.303,
+            "popularity": 2069.624,
             "poster_path": "/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
             "release_date": "2023-12-14",
             "title": "The Family Plan",
             "video": false,
             "vote_average": 7.4,
-            "vote_count": 520
+            "vote_count": 539
         },
         {
             "adult": false,
@@ -492,13 +89,13 @@
             "original_language": "en",
             "original_title": "Silent Night",
             "overview": "A tormented father witnesses his young son die when caught in a gang's crossfire on Christmas Eve. While recovering from a wound that costs him his voice, he makes vengeance his life's mission and embarks on a punishing training regimen in order to avenge his son's death.",
-            "popularity": 1283.6,
+            "popularity": 1797.04,
             "poster_path": "/tlcuhdNMKNGEVpGqBZrAaOOf1A6.jpg",
             "release_date": "2023-11-30",
             "title": "Silent Night",
             "video": false,
             "vote_average": 5.8,
-            "vote_count": 213
+            "vote_count": 220
         },
         {
             "adult": false,
@@ -512,13 +109,13 @@
             "original_language": "en",
             "original_title": "Wonka",
             "overview": "Willy Wonka – chock-full of ideas and determined to change the world one delectable bite at a time – is proof that the best things in life begin with a dream, and if you’re lucky enough to meet Willy Wonka, anything is possible.",
-            "popularity": 1044.333,
+            "popularity": 931.227,
             "poster_path": "/qhb1qOilapbapxWQn9jtRCMwXJF.jpg",
             "release_date": "2023-12-06",
             "title": "Wonka",
             "video": false,
             "vote_average": 7.1,
-            "vote_count": 773
+            "vote_count": 801
         },
         {
             "adult": false,
@@ -531,13 +128,13 @@
             "original_language": "en",
             "original_title": "Oppenheimer",
             "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
-            "popularity": 950.146,
+            "popularity": 889.087,
             "poster_path": "/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
             "release_date": "2023-07-19",
             "title": "Oppenheimer",
             "video": false,
             "vote_average": 8.1,
-            "vote_count": 5816
+            "vote_count": 5844
         },
         {
             "adult": false,
@@ -551,13 +148,13 @@
             "original_language": "en",
             "original_title": "Thanksgiving",
             "overview": "After a Black Friday riot ends in tragedy, a mysterious Thanksgiving-inspired killer terrorizes Plymouth, Massachusetts - the birthplace of the holiday. Picking off residents one by one, what begins as random revenge killings are soon revealed to be part of a larger, sinister holiday plan.",
-            "popularity": 824.411,
+            "popularity": 1154.175,
             "poster_path": "/f5f3TEVst1nHHyqgn7Z3tlwnBIH.jpg",
             "release_date": "2023-11-16",
             "title": "Thanksgiving",
             "video": false,
             "vote_average": 6.7,
-            "vote_count": 392
+            "vote_count": 407
         },
         {
             "adult": false,
@@ -571,13 +168,13 @@
             "original_language": "en",
             "original_title": "The Creator",
             "overview": "Amid a future war between the human race and the forces of artificial intelligence, a hardened ex-special forces agent grieving the disappearance of his wife, is recruited to hunt down and kill the Creator, the elusive architect of advanced AI who has developed a mysterious weapon with the power to end the war—and mankind itself.",
-            "popularity": 808.513,
+            "popularity": 1021.825,
             "poster_path": "/vBZ0qvaRxqEhZwl6LWmruJqWE8Z.jpg",
             "release_date": "2023-09-27",
             "title": "The Creator",
             "video": false,
             "vote_average": 7.1,
-            "vote_count": 1703
+            "vote_count": 1712
         },
         {
             "adult": false,
@@ -590,13 +187,13 @@
             "original_language": "en",
             "original_title": "Five Nights at Freddy's",
             "overview": "Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.",
-            "popularity": 770.193,
+            "popularity": 1078.27,
             "poster_path": "/7BpNtNfxuocYEVREzVMO75hso1l.jpg",
             "release_date": "2023-10-25",
             "title": "Five Nights at Freddy's",
             "video": false,
             "vote_average": 7.8,
-            "vote_count": 3038
+            "vote_count": 3049
         },
         {
             "adult": false,
@@ -610,13 +207,13 @@
             "original_language": "en",
             "original_title": "Leo",
             "overview": "Jaded 74-year-old lizard Leo has been stuck in the same Florida classroom for decades with his terrarium-mate turtle. When he learns he only has one year left to live, he plans to escape to experience life on the outside but instead gets caught up in the problems of his anxious students — including an impossibly mean substitute teacher.",
-            "popularity": 766.227,
+            "popularity": 783.093,
             "poster_path": "/pD6sL4vntUOXHmuvJPPZAgvyfd9.jpg",
             "release_date": "2023-11-17",
             "title": "Leo",
             "video": false,
             "vote_average": 7.5,
-            "vote_count": 732
+            "vote_count": 739
         },
         {
             "adult": false,
@@ -629,13 +226,13 @@
             "original_language": "en",
             "original_title": "Freelance",
             "overview": "An ex-special forces operative takes a job to provide security for a journalist as she interviews a dictator, but a military coup breaks out in the middle of the interview, they are forced to escape into the jungle where they must survive.",
-            "popularity": 746.421,
+            "popularity": 1044.989,
             "poster_path": "/7Bd4EUOqQDKZXA6Od5gkfzRNb0.jpg",
             "release_date": "2023-10-05",
             "title": "Freelance",
             "video": false,
             "vote_average": 6.5,
-            "vote_count": 417
+            "vote_count": 426
         },
         {
             "adult": false,
@@ -649,13 +246,13 @@
             "original_language": "en",
             "original_title": "Dead for a Dollar",
             "overview": "In 1897, veteran bounty hunter Max Borlund is deep into Mexico where he encounters professional gambler and outlaw Joe Cribbens — a sworn enemy he sent to prison years before. Max is on a mission to find and return Rachel Kidd, the wife of a wealthy businessman, who as the story is told to Max, has been abducted by Buffalo Soldier Elijah Jones. Max is ultimately faced with a showdown to save honor.",
-            "popularity": 713.265,
+            "popularity": 427.959,
             "poster_path": "/1AnXfjxFqMsQmUPSvt9YxUJhfFw.jpg",
             "release_date": "2022-09-30",
             "title": "Dead for a Dollar",
             "video": false,
-            "vote_average": 5.6,
-            "vote_count": 175
+            "vote_average": 5.7,
+            "vote_count": 177
         },
         {
             "adult": false,
@@ -671,13 +268,13 @@
             "original_language": "en",
             "original_title": "Trolls Band Together",
             "overview": "When Branch's brother, Floyd, is kidnapped for his musical talents by a pair of nefarious pop-star villains, Branch and Poppy embark on a harrowing and emotional journey to reunite the other brothers and rescue Floyd from a fate even worse than pop-culture obscurity.",
-            "popularity": 705.291,
+            "popularity": 659.227,
             "poster_path": "/bkpPTZUdq31UGDovmszsg2CchiI.jpg",
             "release_date": "2023-10-12",
             "title": "Trolls Band Together",
             "video": false,
             "vote_average": 7.2,
-            "vote_count": 458
+            "vote_count": 463
         },
         {
             "adult": false,
@@ -692,13 +289,13 @@
             "original_language": "en",
             "original_title": "Chicken Run: Dawn of the Nugget",
             "overview": "A band of fearless chickens flock together to save poultry-kind from an unsettling new threat: a nearby farm that's cooking up something suspicious.",
-            "popularity": 654.531,
+            "popularity": 602.308,
             "poster_path": "/exNtEY8QUuQh9e23wSQjkPxKIU3.jpg",
             "release_date": "2023-12-08",
             "title": "Chicken Run: Dawn of the Nugget",
             "video": false,
             "vote_average": 7.3,
-            "vote_count": 372
+            "vote_count": 379
         },
         {
             "adult": false,
@@ -710,7 +307,7 @@
             "original_language": "en",
             "original_title": "Lord of Misrule",
             "overview": "When the daughter of the town's new priest goes missing during the harvest festival, a desperate search begins, uncovering the town's dark history and resurfacing tales of a mysterious, malevolent spirit that demands sacrifice.",
-            "popularity": 649.723,
+            "popularity": 541.598,
             "poster_path": "/eCNJuGsCNdf2yf4F3UcDg1WZTbo.jpg",
             "release_date": "2023-10-26",
             "title": "Lord of Misrule",
@@ -730,13 +327,13 @@
             "original_language": "en",
             "original_title": "Expend4bles",
             "overview": "Armed with every weapon they can get their hands on and the skills to use them, The Expendables are the world’s last line of defense and the team that gets called when all other options are off the table. But new team members with new styles and tactics are going to give “new blood” a whole new meaning.",
-            "popularity": 633.357,
+            "popularity": 886.7,
             "poster_path": "/iwsMu0ehRPbtaSxqiaUDQB9qMWT.jpg",
             "release_date": "2023-09-15",
             "title": "Expend4bles",
             "video": false,
             "vote_average": 6.4,
-            "vote_count": 963
+            "vote_count": 966
         },
         {
             "adult": false,
@@ -750,13 +347,13 @@
             "original_language": "en",
             "original_title": "Fast X",
             "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.",
-            "popularity": 611.878,
+            "popularity": 515.566,
             "poster_path": "/fiVW06jE7z9YnO4trhaMEdclSiC.jpg",
             "release_date": "2023-05-17",
             "title": "Fast X",
             "video": false,
             "vote_average": 7.2,
-            "vote_count": 4604
+            "vote_count": 4616
         },
         {
             "adult": false,
@@ -768,13 +365,13 @@
             "original_language": "en",
             "original_title": "Doors",
             "overview": "Without warning, millions of mysterious alien “doors” suddenly appear around the globe. In a rush to determine the reason for their arrival, mankind must work together to understand the purpose of these cosmic anomalies.",
-            "popularity": 569.522,
+            "popularity": 341.713,
             "poster_path": "/pGPUXyhQTOqskKdDOD3Fmicqfc0.jpg",
             "release_date": "2021-03-23",
             "title": "Doors",
             "video": false,
-            "vote_average": 5,
-            "vote_count": 132
+            "vote_average": 5.1,
+            "vote_count": 133
         },
         {
             "adult": false,
@@ -790,16 +387,15 @@
             "original_language": "en",
             "original_title": "The Super Mario Bros. Movie",
             "overview": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
-            "popularity": 566.37,
+            "popularity": 535.676,
             "poster_path": "/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
             "release_date": "2023-04-05",
             "title": "The Super Mario Bros. Movie",
             "video": false,
             "vote_average": 7.7,
-            "vote_count": 7637
+            "vote_count": 7647
         }
     ],
-    "total_pages": 41759,
-    "total_results": 835161
+    "total_pages": 41762,
+    "total_results": 835238
 }
-

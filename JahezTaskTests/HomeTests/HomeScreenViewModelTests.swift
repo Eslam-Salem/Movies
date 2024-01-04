@@ -13,15 +13,15 @@ class HomeScreenViewModelTests: XCTestCase {
     private var cancellables: Set<AnyCancellable>!
     private var mockNetworkManager: MockNetworkManager!
     private var repo: MovieDataRepository!
-    private var mockInteractor: MovieInteractor!
+    private var mockInteractor: HomeInteractor!
     private var viewModel: HomeScreenViewModel!
 
     override func setUpWithError() throws {
         cancellables = Set<AnyCancellable>()
         mockNetworkManager = MockNetworkManager()
         repo = MovieDataRepository(networkManager: mockNetworkManager)
-        mockInteractor = MovieInteractor(movieRepository: repo)
-        viewModel = HomeScreenViewModel(movieInteractor: mockInteractor)
+        mockInteractor = HomeInteractor(movieRepository: repo)
+        viewModel = HomeScreenViewModel(interactor: mockInteractor)
     }
 
     override func tearDownWithError() throws {
@@ -61,13 +61,13 @@ class HomeScreenViewModelTests: XCTestCase {
         mockNetworkManager.responseData = "".data(using: .utf8)!
 
         XCTAssertFalse(viewModel.isFetchingNextPage)
-        viewModel.loadMoreMoviesIfNeeded(movie: viewModel.allMovies.last!)
+        viewModel.loadMoreMoviesIfNeeded(movie: viewModel.allMovies.last!, selectedGenres: [], searchText: "")
         XCTAssertTrue(viewModel.isFetchingNextPage)
         XCTAssertEqual(viewModel.currentPage, 2)
         viewModel.isFetchingNextPage = false
 
         // test if loadMoreMoviesIfNeeded wont work again because it is exceeded the num of pages.
-        viewModel.loadMoreMoviesIfNeeded(movie: viewModel.allMovies.last!)
+        viewModel.loadMoreMoviesIfNeeded(movie: viewModel.allMovies.last!, selectedGenres: [], searchText: "")
         XCTAssertFalse(viewModel.isFetchingNextPage)
     }
 

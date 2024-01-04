@@ -27,6 +27,7 @@ class MockNetworkManager: NetworkManager {
         return Just(responseData)
             .decode(type: T.self, decoder: JSONDecoder.defaultDecoder)
             .mapError { _ in NetworkError.invalidResponse }
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }

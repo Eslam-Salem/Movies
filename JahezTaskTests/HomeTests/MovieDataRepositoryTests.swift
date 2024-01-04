@@ -72,7 +72,7 @@ class MovieDataRepositoryTests: XCTestCase {
         var receivedMovies: [Movie]?
         let expectation = self.expectation(description: "Expect to receive movies")
 
-        let cancellable = movieDataRepository.getPopularMovies(page: page)
+        let cancellable = movieDataRepository.getPopularMovies(page: page, requestContext: .initalCall)
             .sink(receiveCompletion: { _ in }) { movies in
                 receivedMovies = movies.results
                 expectation.fulfill()

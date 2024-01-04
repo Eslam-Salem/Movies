@@ -12,9 +12,8 @@ struct HomeScreen: View {
     @State private var searchText: String = ""
     @State private var selectedGenres: Set<Int> = []
     @State var isMovieDetailsPresented = false
-
     @StateObject private var viewModel = HomeScreenViewModel()
-
+    
     @EnvironmentObject private var coordinator: Coordinator
 
     var body: some View {
@@ -25,7 +24,7 @@ struct HomeScreen: View {
                 .onChange(of: searchText) { newValue in
                     viewModel.filterMovies(selectedGenres: selectedGenres, searchText: newValue)
                 }
-
+            
             // Screen Title
             Text("Watch New Movies")
                 .font(.title)
@@ -33,13 +32,13 @@ struct HomeScreen: View {
                 .foregroundColor(Color.appYellow)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(8)
-
+            
             // Filter
             FilterChipsView(selectedGenres: $selectedGenres, allGenres: viewModel.genres)
                 .onChange(of: selectedGenres) { newValue in
                     viewModel.filterMovies(selectedGenres: newValue, searchText: searchText)
                 }
-
+            
             // Movies List
             if viewModel.isFetchingMovies {
                 LoadingView(text: "Fetching Movies...", maxHeight: .infinity)
@@ -52,17 +51,21 @@ struct HomeScreen: View {
                         ForEach(viewModel.filterdMovies) { movie in
                             MovieItemView(movie: movie)
                                 .onTapGesture {
-                                    coordinator.push(.movieDetails(movieID: movie.id))
+                                    viewModel.navigateToMovieDetails(movie: movie, coordinator: coordinator)
                                 }
                                 .onAppear {
-                                    viewModel.loadMoreMoviesIfNeeded(movie: movie)
+                                    viewModel.loadMoreMoviesIfNeeded(
+                                        movie: movie,
+                                        selectedGenres: selectedGenres,
+                                        searchText: searchText
+                                    )
                                 }
                         }
                     }
                 }
                 .scrollContentBackground(.hidden)
             }
-
+            
             // Pagination progress view
             if viewModel.isFetchingNextPage {
                 LoadingView(text: "Loading more ..", maxHeight: 50)
@@ -73,8 +76,18 @@ struct HomeScreen: View {
             viewModel.fetchMovies()
         }
         .background(Color.black)
+        .alert(item: $viewModel.errorMessage) { errorMessage in
+            Alert(
+                title: Text("Error"),
+                message: Text(errorMessage),
+                dismissButton: .default(Text("OK")) {
+                    viewModel.errorMessage = nil
+                }
+            )
+        }
     }
 }
+
 
 #Preview {
     HomeScreen()

@@ -12,19 +12,20 @@ class HomeScreenViewModel: ObservableObject {
     @Published var filterdMovies: [Movie] = []
     @Published var isFetchingMovies = false
     @Published var isFetchingNextPage = false
+    @Published var errorMessage: String?
     var allMovies: [Movie] = []
     var currentPage = 1
     var totalNumberOfPages = 1
-    
+
     private var cancellables: Set<AnyCancellable> = []
-    private let movieInteractor: MovieInteractor
+    private let interactor: HomeInteractor
     
-    init(movieInteractor: MovieInteractor = MovieInteractor(movieRepository: MovieDataRepository(networkManager: ServerNetworkManager()))) {
-        self.movieInteractor = movieInteractor
+    init(interactor: HomeInteractor = HomeInteractor(movieRepository: MovieDataRepository(networkManager: ServerNetworkManager()))) {
+        self.interactor = interactor
     }
     
     func fetchGenres() {
-        movieInteractor.getMovieGenres()
+        interactor.getMovieGenres()
             .sink(receiveCompletion: { _ in },
                   receiveValue: { [weak self] response in
                 self?.genres = response.genres
@@ -54,25 +55,48 @@ class HomeScreenViewModel: ObservableObject {
         requestMoviesList(requestContext: .initalCall)
     }
     
-    func loadMoreMoviesIfNeeded(movie: Movie) {
-        /// check on "movies" not "filtered movies" to make the pagination logic happens only in normal scrolling not while scrolling with filtering
+    func loadMoreMoviesIfNeeded(movie: Movie, selectedGenres: Set<Int>, searchText: String) {
+        /// check  to make the pagination logic happens only in normal scrolling not while scrolling with filtering
         let isLastMovieInTheList = movie == allMovies.last
-        guard isLastMovieInTheList, currentPage < totalNumberOfPages else { return }
+        let isInFilterMode = !selectedGenres.isEmpty || !searchText.isEmpty
+        guard isLastMovieInTheList, currentPage < totalNumberOfPages, !isInFilterMode else { return }
         currentPage += 1
         isFetchingNextPage = true
         requestMoviesList(requestContext: .pagination)
     }
     
     private func requestMoviesList(requestContext: RequestContext) {
-        movieInteractor.getPopularMovies(page: currentPage, requestContext: requestContext)
-            .sink(receiveCompletion: { _ in },
-                  receiveValue: { [weak self] moviesResponseModel in
+        interactor.getPopularMovies(page: currentPage, requestContext: requestContext)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .finished:
+                    self?.stopFetchingDataIndicator()
+                case .failure(let error):
+                    self?.stopFetchingDataIndicator()
+                    self?.handleNetworkError(error)
+                }
+            },receiveValue: { [weak self] moviesResponseModel in
                 self?.allMovies.append(contentsOf: moviesResponseModel.results ?? [])
                 self?.totalNumberOfPages = moviesResponseModel.totalPages ?? 1
-                self?.isFetchingMovies = false
-                self?.isFetchingNextPage = false
                 self?.filterMovies(selectedGenres: [], searchText: "")
             })
             .store(in: &cancellables)
+    }
+    
+    private func handleNetworkError(_ error: NetworkError) {
+        errorMessage = error.localizedDescription
+    }
+    
+    private func stopFetchingDataIndicator() {
+        isFetchingMovies = false
+        isFetchingNextPage = false
+    }
+    
+    func navigateToMovieDetails(movie: Movie, coordinator: Coordinator) {
+        if NetworkReachability.isOnline {
+            coordinator.push(.movieDetails(movieID: movie.id))
+        } else {
+            errorMessage = "No internet connection!!" 
+        }
     }
 }

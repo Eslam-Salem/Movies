@@ -22,17 +22,22 @@ struct ServerNetworkManager: NetworkManager {
         [
             "Authorization": Constants.ApiKey
         ]
-
+        
         return URLSession.shared.dataTaskPublisher(for: request)
-            .tryMap { data, response in
-                guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else {
-                    throw NetworkError.invalidResponse
-                }
-                return data
-            }
-            .decode(type: T.self, decoder: JSONDecoder.defaultDecoder)
             .mapError { error in
-                NetworkError.decodingError(error)
+                NetworkError.networkError(error)
+            }
+            .flatMap { data, response -> AnyPublisher<T, NetworkError> in
+                guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else {
+                    return Fail(error: .invalidResponse).eraseToAnyPublisher()
+                }
+
+                return Just(data)
+                    .decode(type: T.self, decoder: JSONDecoder.defaultDecoder)
+                    .mapError { error in
+                        NetworkError.decodingError(error)
+                    }
+                    .eraseToAnyPublisher()
             }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()

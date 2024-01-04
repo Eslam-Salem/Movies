@@ -18,7 +18,7 @@
 		530512522B40424400142107 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512512B40424400142107 /* Constants.swift */; };
 		530512552B408E8A00142107 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512542B408E8A00142107 /* MovieRepository.swift */; };
 		530512572B408ED900142107 /* MovieDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512562B408ED900142107 /* MovieDataRepository.swift */; };
-		530512592B40901800142107 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512582B40901800142107 /* MovieInteractor.swift */; };
+		530512592B40901800142107 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512582B40901800142107 /* HomeInteractor.swift */; };
 		5305125B2B40917B00142107 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305125A2B40917B00142107 /* HomeScreenViewModel.swift */; };
 		5305125D2B40920A00142107 /* MoviesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305125C2B40920A00142107 /* MoviesResponseModel.swift */; };
 		530512622B40983F00142107 /* JsonDecoderEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512612B40983F00142107 /* JsonDecoderEXT.swift */; };
@@ -49,6 +49,10 @@
 		530512B02B45EC7D00142107 /* MockedMoviesList.json in Resources */ = {isa = PBXBuildFile; fileRef = 530512AF2B45EC7D00142107 /* MockedMoviesList.json */; };
 		530512B22B45ED3900142107 /* JsonFilesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512B12B45ED3900142107 /* JsonFilesLoader.swift */; };
 		530512B42B45F2F100142107 /* MockedMovieGeners.json in Resources */ = {isa = PBXBuildFile; fileRef = 530512B32B45F2F100142107 /* MockedMovieGeners.json */; };
+		530512BA2B46495800142107 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512B92B46495800142107 /* CoordinatorTests.swift */; };
+		530512BE2B46537200142107 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512BD2B46537200142107 /* NetworkReachability.swift */; };
+		530512C32B48428A00142107 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512C22B48428A00142107 /* NetworkError.swift */; };
+		530512C52B48696D00142107 /* StringEXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530512C42B48696D00142107 /* StringEXT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +87,7 @@
 		530512512B40424400142107 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		530512542B408E8A00142107 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		530512562B408ED900142107 /* MovieDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataRepository.swift; sourceTree = "<group>"; };
-		530512582B40901800142107 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		530512582B40901800142107 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		5305125A2B40917B00142107 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		5305125C2B40920A00142107 /* MoviesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponseModel.swift; sourceTree = "<group>"; };
 		530512612B40983F00142107 /* JsonDecoderEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoderEXT.swift; sourceTree = "<group>"; };
@@ -112,6 +116,10 @@
 		530512AF2B45EC7D00142107 /* MockedMoviesList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedMoviesList.json; sourceTree = "<group>"; };
 		530512B12B45ED3900142107 /* JsonFilesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFilesLoader.swift; sourceTree = "<group>"; };
 		530512B32B45F2F100142107 /* MockedMovieGeners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockedMovieGeners.json; sourceTree = "<group>"; };
+		530512B92B46495800142107 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		530512BD2B46537200142107 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		530512C22B48428A00142107 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		530512C42B48696D00142107 /* StringEXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEXT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +186,7 @@
 			children = (
 				530512A52B45B73400142107 /* MovieDetailsTests */,
 				5305127D2B43426E00142107 /* HomeTests */,
+				530512B92B46495800142107 /* CoordinatorTests.swift */,
 			);
 			path = JahezTaskTests;
 			sourceTree = "<group>";
@@ -237,7 +246,7 @@
 			children = (
 				530512532B408E4D00142107 /* Model */,
 				530512542B408E8A00142107 /* MovieRepository.swift */,
-				530512582B40901800142107 /* MovieInteractor.swift */,
+				530512582B40901800142107 /* HomeInteractor.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -256,8 +265,10 @@
 			isa = PBXGroup;
 			children = (
 				530512402B4037DA00142107 /* NetworkManager.swift */,
+				530512C22B48428A00142107 /* NetworkError.swift */,
 				530512422B4037EA00142107 /* MockNetworkManager.swift */,
 				5305126A2B40AA1900142107 /* ServerNetworkManager.swift */,
+				530512BD2B46537200142107 /* NetworkReachability.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 				5305127B2B41FAA300142107 /* ImageLoaderConfigurator.swift */,
 				530512A32B45B2CA00142107 /* OnFirstAppearModifier.swift */,
 				530512B12B45ED3900142107 /* JsonFilesLoader.swift */,
+				530512C42B48696D00142107 /* StringEXT.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -523,12 +535,14 @@
 				530512812B43BE2200142107 /* MovieDetailsScreen.swift in Sources */,
 				530512B22B45ED3900142107 /* JsonFilesLoader.swift in Sources */,
 				530512942B445C9B00142107 /* ServerImageView.swift in Sources */,
+				530512C32B48428A00142107 /* NetworkError.swift in Sources */,
 				530512572B408ED900142107 /* MovieDataRepository.swift in Sources */,
-				530512592B40901800142107 /* MovieInteractor.swift in Sources */,
+				530512592B40901800142107 /* HomeInteractor.swift in Sources */,
 				5305125B2B40917B00142107 /* HomeScreenViewModel.swift in Sources */,
 				5305128B2B44489700142107 /* MovieDetailsRepository.swift in Sources */,
 				5305127C2B41FAA300142107 /* ImageLoaderConfigurator.swift in Sources */,
 				530512712B41E0DD00142107 /* HomeScreen.swift in Sources */,
+				530512BE2B46537200142107 /* NetworkReachability.swift in Sources */,
 				530512412B4037DA00142107 /* NetworkManager.swift in Sources */,
 				530512982B447B1300142107 /* BoldRegularTextView.swift in Sources */,
 				5305128D2B4448D800142107 /* MovieDetailsInteractor.swift in Sources */,
@@ -544,6 +558,7 @@
 				530512432B4037EA00142107 /* MockNetworkManager.swift in Sources */,
 				5305129C2B449AFB00142107 /* MovieDetailsComponents.swift in Sources */,
 				5305128F2B44498A00142107 /* MovieDetailsDataRepository.swift in Sources */,
+				530512C52B48696D00142107 /* StringEXT.swift in Sources */,
 				5305120F2B40331400142107 /* JahezTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				530512A92B45C4D300142107 /* MovieDetailsViewModelTests.swift in Sources */,
+				530512BA2B46495800142107 /* CoordinatorTests.swift in Sources */,
 				530512A72B45B7E700142107 /* MovieDetailsDataRepoTests.swift in Sources */,
 				5305127F2B43AA2800142107 /* MovieDataRepositoryTests.swift in Sources */,
 				530512502B40417A00142107 /* HomeScreenViewModelTests.swift in Sources */,
